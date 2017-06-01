@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>自我信息管理</title>
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/books.css" />
+<script src="js/jquery-2.2.3.js"></script>
+</head>
+<body style="margin:0;padding:0;overflow:hidden" scroll="no">
+<div class="wrap" >
+	  <!-- myInfo.jsp  account.jsp  address.jsp  allorder.jsp  account_center.jsp-->
+       <div class="left_content" style="background: white;width: 53.8%;float: right;height:500px;">
+       		<ul class="list">
+       			<li class="tag select_tag"><a href="MyInfoOld" target="rightFrame" class="tag_a" style="color:#734633">个人资料</a></li>
+       			<li class="tag"><a href="MySecurityOld" target="rightFrame" class="tag_a" style="color:#734633">账户与安全</a></li>
+       			<li class="tag"><a href="MyAddressOld" target="rightFrame" class="tag_a" style="color:#734633">收货地址管理</a></li>
+       			<li class="tag"><a href="MyOrders" target="rightFrame" class="tag_a" style="color:#734633">所有订单</a></li>
+       			<li class="tag"><a href="account_center.jsp" target="rightFrame" class="tag_a" style="color:#734633">会员中心</a></li>
+       		</ul>
+       </div><!-- end of left content -->
+    
+</div>
+ <script type="text/javascript">
+ 	$(".tag").click(function(){
+ 		//alert("asd");
+ 		$(".tag").removeClass("select_tag");
+ 		$(this).addClass("select_tag");
+ 	})
+ </script>
+</body>
+</html>
